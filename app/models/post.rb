@@ -1,4 +1,3 @@
 class Post < ApplicationRecord
-    belongs_to :poster,
-    class_name: :User
+    belongs_to :user
 end

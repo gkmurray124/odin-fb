@@ -1,7 +1,5 @@
 class User < ApplicationRecord
-    has_many :posts,
-    foreign_key: :poster_id,
-    dependent: :destroy
+    has_many :posts
 
     validates :name, presence: true 
     validates :password, presence: true 
