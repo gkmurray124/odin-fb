@@ -6,5 +6,7 @@ Rails.application.routes.draw do
     get 'posts'
   end 
 
+  get '/users', to: 'users#show'
+
   resources :posts
 end
